@@ -1,26 +1,36 @@
 package HomeWork1;
-
-public class HomeWork2 {
+public class HomeWork2{
+    static int a = 8;
+    static int b = 2;
     public static void main(String[] args) {
-        int a = 8;
-        int b = 2;
-        int c = 5 + 2 / a; // 5+0.25=5.25 сначала выполняется деление
-        System.out.println(c);
-        int d = (5 + 2) / a; // 7/8=0.875 сначала выполняется сложение
-        System.out.println(d);
-        int e = (5 + b++) / a; // (5+3)/8 = 8/8 = 1 сначала выполняется сложение, далее деление
-        System.out.println(e);
-        int f = (5 + b++) / --a; // (5+3)/7 = 8/7 сначала выполняется постинкремент, далее сложение и деление
-        System.out.println(f);
-        int g = (5 * 2 >> b++) / --a; //(00001010 >> 3) / 7 == 00000001 / 7 сначала выполняется постикремент,далее умножение, далее сдвиг справо, далее деление
-        System.out.println(g);
-        int h = ((5 + 7 > 20 ? 68 : 22 * 2 >> b++) / --a); // (12>20?6.18 >> 3) / 7 == 0 сначала выполняется постинкремент, далее деление и умножение, далее сложение, далее сдвиг вправо, далее > и ? и деление на --а
-        System.out.println(h);
-        //int i = (5 + 7 > 20 ? 68 >= 68 : 22 * 2 >> b++) / --a; ошибка компиляции
-        //System.out.println(i);
-        boolean j = 6 - 2 > 3 && 12 * 12 <= 119; //  4>3 && 144<=199
-        System.out.println(j);
-        boolean k = true && false; // оператор && вернет false, т.к. оба операнда не могут быть преобразованы в true
-        System.out.println(k);
+        int c = 5;
+        int d = 7;
+        int e = 20;
+        int f = 68;
+        int g = 22;
+        int h = 6;
+        int i = 3;
+        int j = 12;
+        int k = 119;
+        boolean l = true;
+        boolean m = false;
+        double n = c + (double) b / a; //5+0.25=5.25 сначала выполняется деление
+        System.out.println(n);
+        double o = (double) (c + b) / a; //7/8=0.875 сначала выполняется сложение
+        System.out.println(o);
+        double p = (double) (c + b++) / a; //(5+3)/8 = 8/8  сначала выполняется сложение, далее деление
+        System.out.println(p);
+        double q = (double) (c + b++) / --a; //(5+3)/7 = 8/7 сначала выполняется постинкремент, далее сложение и деление
+        System.out.println(q);
+        double r = (double) (c * b >> b++) / --a; //(00001010 >> 3) / 7 == 00000001 / 7 сначала выполняется постикремент,далее умножение, далее сдвиг справо, далее деление
+        System.out.println(r);
+        double s = (double)  (c + d > e ? f : g * b >> b++) / --a; // (12>20?6.18 >> 3) / 7 сначала выполняется постинкремент, далее деление и умножен
+        System.out.println(s);
+        //double t = (double) (c + d > e ? f >= f : g * b >> b++) / --a; // ошибка компиляции
+        //System.out.println(t);
+        boolean u = h - b > i && j * j <= k; // 4>3 && 144<=199
+        System.out.println(u);
+        boolean v = l && m; // оператор && вернет false, т.к. оба операнда не могут быть преобразованы в true
+        System.out.println(v);
     }
 }
