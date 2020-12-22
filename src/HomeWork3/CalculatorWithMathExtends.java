@@ -1,17 +1,15 @@
 package HomeWork3;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator{
+public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator{
     public double pow(double a, int b){
-        double result5 = Math.pow(a, b);
-        return result5;
+        return Math.pow(a, b);
     }
-    public int abs(int a){
-        int result6 = Math.abs(a);
-        return result6;
+
+    public double abs(double a){
+        return Math.abs(a);
     }
+
     public double sqrt(double a){
-        Math.sqrt(a);
-        double result7 = a;
-        return result7;
+        return Math.sqrt(a);
     }
 }
