@@ -1,7 +1,6 @@
 package HomeWork4.newHomeWork4;
 
-import java.util.Arrays;
-
+import static HomeWork4.newHomeWork4.DataContainer.*;
 
 public class DataContainerMain {
     public static void main(String[] args) {
@@ -15,9 +14,7 @@ public class DataContainerMain {
         container.getItems();
         container.delete(3);
         container.delete(null);
-        DataContainer.sort(container);
+        sort(container);
         container.print();
-
-
     }
 }
