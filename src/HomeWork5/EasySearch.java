@@ -1,6 +1,6 @@
 package HomeWork5;
 
-public class EasySerch implements ISearchEngine{
+public class EasySearch implements ISearchEngine{
     public long search(String text, String word) {
         long counter = 0;
         word = " " + word + " ";
